@@ -41,6 +41,7 @@ return {
             "${workspaceFolder}/api/src/index.ts",
           },
           env = {
+            NODE_ENV = "dev",
             AWS_ACCESS_KEY_ID = "",
             AWS_SECRET_ACCESS_KEY = "",
             AWS_SESSION_TOKEN = "",
