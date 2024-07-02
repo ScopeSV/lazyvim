@@ -49,6 +49,16 @@ return {
         },
         {
           type = "pwa-node",
+          request = "launch",
+          name = "Hours",
+          args = { "./src/index.ts" },
+          runtimeArgs = { "-r", "ts-node/register" },
+          internalConsoleOptions = "openOnSessionStart",
+          envFile = "${workspaceFolder}/.env",
+          outputCapture = "std",
+        },
+        {
+          type = "pwa-node",
           request = "attach",
           name = "attach by process",
           processid = require("dap.utils").pick_process,
